@@ -1,0 +1,1 @@
+The project returns a stock price for the given stock index. The DynampoDb table is used as a cache to reduce the number of calls to the remote API. The remote API has a limit of 100 requests per month.
