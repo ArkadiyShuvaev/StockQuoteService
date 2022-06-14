@@ -5,4 +5,6 @@ public class StockQuoteSettings
     public string AccessKey { get; set; }
 
     public string ApiUri { get; set; }
+
+    public int CacheTimeInHours { get; set; }
 }
