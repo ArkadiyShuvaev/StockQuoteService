@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "amazonwebservices.aws-toolkit-vscode",
-        "ThreadHeap.serverless-ide-vscode"
+        "threadheap.serverless-ide-vscode",
+        "kddejong.vscode-cfn-lint"
     ]
 }

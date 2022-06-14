@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/StockQuote/StockQuote.csproj",
+                "${workspaceFolder}/src/StockQuote.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/src/StockQuote/StockQuote.csproj"
+                "${workspaceFolder}/src/StockQuote.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
