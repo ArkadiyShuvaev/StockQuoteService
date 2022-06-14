@@ -20,7 +20,7 @@ public class StockQuoteService : IStockQuoteService
     public async Task<decimal> Get()
     {
         var cachedItem = await _dynamoDbService.Get(_settings.Symbol);
-        if (cachedItem != null)
+        if (cachedItem != null && cachedItem.ExpirationTime < DateTime.Now)
         {
             return cachedItem.Value;
         }
