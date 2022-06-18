@@ -11,3 +11,7 @@ The project returns a stock price for the given stock index. The DynampoDb table
     ```cmd
     dotnet lambda deploy-function StockQuoteService --region eu-central-1 --function-role "arn:aws:iam::165819210796:role/service-role/stock-quote-service-role" --function-runtime dotnet6 --function-memory-size 128 --package-type zip --configuration Release --function-timeout 15 --function-handler StockQuote
     ```
+1. To debug the Lambda please add to the command above:
+    ```cmd
+    --environment-variables LAMBDA_NET_SERIALIZER_DEBUG=true;
+    ```
